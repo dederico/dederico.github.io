@@ -1,0 +1,18 @@
+@media only screen and (max-width:600px) {
+
+    // body{
+    //     background-color: yellow !important;
+    // }
+    #navbar-search {
+        width: 100% !important;
+        // margin-left: 50%;
+    }
+
+    #logo-text {
+        display: none !important;
+    }
+}
+
+.navbar.navbar-dark.bg-faded {
+    background-color: rgb(255, 193, 243) !important;
+}
