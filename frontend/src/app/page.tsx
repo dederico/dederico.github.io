@@ -6,7 +6,7 @@ import {
 } from "openai";
 import ChatBubble from "@/components/ChatBubble";
 
-function Chatty() {
+function Chatty(): JSX.Element {
   const [query, setQuery] = useState("");
   const [answer, setAnswer] = useState("");
   const [loading, setLoading] = useState(false);
