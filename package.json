@@ -1,0 +1,34 @@
+{
+  "name": "careeryze",
+  "version": "1.0.0",
+  "description": "Your project description goes here",
+  "main": "backend/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "cd frontend && npm install && npm run build && npm run start & cd ../backend && npm install && npm run start-dev",
+    "build": "cd frontend && npm run build",
+    "dev": "cd backend && npm run start-dev & cd ../frontend && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Careeryze Development",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "openai": "^3.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.5.5"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "frontend",
+      "backend"
+    ]
+  }
+}
