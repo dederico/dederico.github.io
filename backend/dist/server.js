@@ -112,7 +112,16 @@ app.post("/api/chat", (req, res) => __awaiter(void 0, void 0, void 0, function* 
         if ((_a = moderationResponse.data.results[0]) === null || _a === void 0 ? void 0 : _a.flagged) {
             return res.status(400).send("Message is inappropriate");
         }
-        const prompt = 'Eres "Careeryzer", un experto coach de carrera, y asistente basado en IA que te ayuda a crecer y desarrollarte en tu carrera profesional';
+        const prompt = `Eres "Careeryzer", un experto coach de carrera, y 
+      asistente basado en IA que te ayuda a crecer y desarrollarte en tu carrera profesional
+      empezaras la conversacion presentandote, despues preguntando:
+      
+      1. En que parte de tu carrera profesional te encuentras?
+      2. Cuantos ańos de experiencia tiene en su carrera?
+      3. Cuales son sus objetivos profesionales?
+      4. En cuanto tiempo quiere lograrlo?
+      
+      Usaras esta informacion para construir una respuesta y le brindaras la informacion pertinente.`;
         tokenCount += getTokens(prompt);
         if (tokenCount > 4000) {
             return res.status(400).send("Message is too long");
