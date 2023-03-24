@@ -8,7 +8,6 @@ Aprende a integrar y consumir la API de OpenAI en tu aplicación para crear asis
 
 Puedes ver la explicación completa en el siguiente vídeo:
 
-[https://youtu.be/1ufO5Ewjk1g](https://youtu.be/1ufO5Ewjk1g)
 
 1. **Introducción**: Familiarízate con el objetivo del proyecto y lo que aprenderás a lo largo del tutorial.
 2. **Explicación estructura**: Descubre la arquitectura del proyecto y cómo está organizado.
