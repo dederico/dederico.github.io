@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "install": "npm install --save",
     "start": "node build/index.js",
     "build": "tsc",
     "start-dev": "ts-node --esm src/server.ts",
