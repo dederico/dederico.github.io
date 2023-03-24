@@ -5,7 +5,7 @@
   "main": "backend/index.js",
   "type": "module",
   "scripts": {
-    "start": "cd frontend && npm install && npm run build && npm run start & npm --prefix backend i --save-dev @types/jsonwebtoken @types/bcrypt && npm --prefix backend run build && npm --prefix backend run start-dev",
+    "start": "npm i --save-dev @types/jsonwebtoken @types/bcrypt && cd frontend && npm install && npm run build && npm run start & npm --prefix backend run build && npm --prefix backend run start-dev",
     "build": "cd frontend && npm run build",
     "dev": "cd backend && npm run start-dev & cd ../frontend && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
